@@ -1,0 +1,32 @@
+// -----------------------------------------------------------
+// Buttons ----
+// -----------------------------------------------------------
+
+// .btn--default
+// .btn--success
+// .btn--error
+// .btn--warning
+// .btn--info
+// .theme__colors
+
+.btn {
+  &--default {
+    @include btn($btn--default);
+  }
+
+  &--success {
+    @include btn($btn--success);
+  }
+
+  &--error {
+    @include btn($btn--error);
+  }
+
+  &--warning {
+    @include btn($btn--warning);
+  }
+
+  &--info {
+    @include btn($btn--info);
+  }
+}

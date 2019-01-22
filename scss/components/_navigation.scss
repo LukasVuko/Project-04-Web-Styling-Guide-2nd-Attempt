@@ -1,0 +1,25 @@
+// -----------------------------------------------------------
+// Navigation ----
+// -----------------------------------------------------------
+
+// .nav__item
+
+.nav {
+  &__item {
+    &:hover {
+      color: $white;
+      background-color: $color-trim;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-font-default;
+    }
+  }
+}
+
+ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,19 @@
+// -----------------------------------------------------------
+// Forms ----
+// -----------------------------------------------------------
+
+// .form
+// .form__label--hidden
+// .form__input
+
+.form {
+  &__label--hidden {
+    display: none;
+  }
+
+  &__input {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
