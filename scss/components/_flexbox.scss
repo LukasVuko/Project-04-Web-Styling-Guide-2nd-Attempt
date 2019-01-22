@@ -23,6 +23,11 @@
 
 .grid {
   &__row {
+    @include flexy(column);
+    @include mq("med") {
+      @include flexy(row);
+    }
+    margin-bottom: 3em;
   }
 
   &__row--2 {
