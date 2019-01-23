@@ -1,37 +1,63 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .grid__col--3.theme__colors {
   background-color: #d7b5ea;
+  margin-bottom: 0.7em;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
   flex: 4; }
 
 .grid__col--4.theme__colors {
   background-color: #97e4fa;
+  margin-bottom: 0.7em;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
   flex: 1; }
 
 .grid__col--5.theme__colors {
   background-color: #9ad6a5;
+  margin-bottom: 0.7em;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
   flex: 1; }
 
 .grid__col--6.theme__colors {
   background-color: #5da9c7;
+  margin-bottom: 0.7em;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
   flex: 1; }
 
 .grid__col--7.theme__colors {
   background-color: #ffa2a4;
+  margin-bottom: 0.7em;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
   flex: 1.4; }
+  @media (min-width: 768px) {
+    .grid__col--7.theme__colors {
+      max-width: 58.33333333%; } }
 
 .grid__col--8.theme__colors {
   background-color: #f0a38a;
+  margin-bottom: 0.7em;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
   flex: 2; }
 
 .grid__col--12.theme__colors {
   background-color: #99e5d2;
+  margin-bottom: 0.7em;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
   flex: 1; }
 
 * {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: gray; }
 
 p {
-  text-align: left; }
+  text-align: left;
+  line-height: 1.5; }
 
 h1 {
   text-align: left; }
@@ -351,12 +377,13 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.75em 1.5em;
-  border-radius: 0.35em;
   border: none;
   background-color: #79dbf8;
   width: 100%;
   margin: 0 auto;
-  align-self: center; }
+  align-self: center;
+  border-radius: 0.35em;
+  margin-bottom: 1.2em; }
 .btn--success {
   color: white;
   display: inline-block;
@@ -364,12 +391,13 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.75em 1.5em;
-  border-radius: 0.35em;
   border: none;
   background-color: #7ec989;
   width: 100%;
   margin: 0 auto;
-  align-self: center; }
+  align-self: center;
+  border-radius: 0.35em;
+  margin-bottom: 1.2em; }
 .btn--error {
   color: white;
   display: inline-block;
@@ -377,12 +405,13 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.75em 1.5em;
-  border-radius: 0.35em;
   border: none;
   background-color: #d67b7d;
   width: 100%;
   margin: 0 auto;
-  align-self: center; }
+  align-self: center;
+  border-radius: 0.35em;
+  margin-bottom: 1.2em; }
 .btn--warning {
   color: white;
   display: inline-block;
@@ -390,12 +419,13 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.75em 1.5em;
-  border-radius: 0.35em;
   border: none;
   background-color: #ed7f5f;
   width: 100%;
   margin: 0 auto;
-  align-self: center; }
+  align-self: center;
+  border-radius: 0.35em;
+  margin-bottom: 1.2em; }
 .btn--info {
   color: white;
   display: inline-block;
@@ -403,17 +433,22 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.75em 1.5em;
-  border-radius: 0.35em;
   border: none;
   background-color: #8e7dbc;
   width: 100%;
   margin: 0 auto;
-  align-self: center; }
+  align-self: center;
+  border-radius: 0.35em;
+  margin-bottom: 1.2em; }
 
 .grid__row {
+  margin-bottom: 1.2em;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 3em; }
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .grid__row {
+      display: flex;
+      flex-direction: row; } }
 
 .form__label--hidden {
   display: none; }
@@ -422,27 +457,42 @@ template {
   text-align: left;
   width: 100%; }
 
-.nav__item:hover {
-  color: white;
-  background-color: #7fdec2; }
-.nav__item a {
-  text-decoration: none;
-  color: gray; }
+.img--logo {
+  margin: 1.2em 0 2em 0; }
 
-ul {
+.nav {
   list-style: none;
   /* Remove list bullets */
   padding: 0;
   margin: 0; }
+  .nav__item a {
+    transition-duration: 0.5s;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    border-radius: 0.35em;
+    display: block; }
+    .nav__item a:hover {
+      color: white;
+      background-color: #7fdec2; }
 
 .container {
   margin: 2em 2em;
   text-align: center; }
 
 .link {
+  color: #7bdcf8;
+  font-weight: bold;
   list-style: none; }
 
 .blockquote {
   text-align: left; }
+
+.headline--primary {
+  color: #7fdec2;
+  padding-left: 0.65em;
+  font-weight: bold;
+  font-size: 1.8em; }
+.headline--secondary {
+  padding-left: 0.4em; }
 
 /*# sourceMappingURL=styles.css.map */

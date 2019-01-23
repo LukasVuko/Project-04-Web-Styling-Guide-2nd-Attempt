@@ -14,16 +14,9 @@
 
 @mixin mq($break) {
   $value: map-get($breakpoints, $break);
-  $med: map-get($breakpoints, "med");
 
-  @if $value < $med {
-    @media (max-width: "med") {
-      @content;
-    }
-  } @else if $value == "med" {
-    @media (min-width: "med") {
-      @content;
-    }
+  @media (min-width: $value) {
+    @content;
   }
 }
 
@@ -36,18 +29,22 @@
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.75em 1.5em;
-  border-radius: 0.35em;
   border: none;
   background-color: $bc;
   width: 100%;
   margin: 0 auto;
   align-self: center;
+  border-radius: $brd-rad;
+  margin-bottom: 1.2em;
 }
 
 // GRID LAYOUT MIXINS ----- includes grid system mixin for grid styling, and function that creates each node in rows
 
 @mixin gridsys($bc) {
   background-color: $bc;
+  margin-bottom: 0.7em;
+  padding: 0.75em 1.5em;
+  border-radius: $brd-rad;
 }
 
 @for $i from 1 through 12 {

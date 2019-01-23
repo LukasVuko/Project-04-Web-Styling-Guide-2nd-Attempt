@@ -5,21 +5,20 @@
 // .nav__item
 
 .nav {
-  &__item {
-    &:hover {
-      color: $white;
-      background-color: $color-trim;
-    }
-
-    a {
-      text-decoration: none;
-      color: $color-font-default;
-    }
-  }
-}
-
-ul {
   list-style: none; /* Remove list bullets */
   padding: 0;
   margin: 0;
+  &__item {
+    a {
+      transition-duration: 0.5s;
+      text-decoration: none;
+      padding: 1em 1.5em;
+      border-radius: $brd-rad;
+      display: block;
+      &:hover {
+        color: $white;
+        background-color: $color-trim;
+      }
+    }
+  }
 }

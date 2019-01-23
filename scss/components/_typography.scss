@@ -14,9 +14,23 @@
 }
 
 .link {
+  color: $color-font-link;
+  font-weight: bold;
   list-style: none;
 }
 
 .blockquote {
   text-align: left;
+}
+
+.headline {
+  &--primary {
+    color: $color-font-headline;
+    padding-left: 0.65em;
+    font-weight: bold;
+    font-size: 1.8em;
+  }
+  &--secondary {
+    padding-left: 0.4em;
+  }
 }
