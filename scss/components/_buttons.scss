@@ -9,24 +9,32 @@
 // .btn--info
 // .theme__colors
 
-.btn {
-  &--default {
-    @include btn($btn--default);
-  }
-
-  &--success {
-    @include btn($btn--success);
-  }
-
-  &--error {
-    @include btn($btn--error);
-  }
-
-  &--warning {
-    @include btn($btn--warning);
-  }
-
-  &--info {
-    @include btn($btn--info);
+@each $theme, $color in $color-map {
+  .btn--#{$theme} {
+    @include btn($color);
   }
 }
+
+// OLD CODE
+
+// .btn {
+//   &--default {
+//     @include btn($btn--default);
+//   }
+
+//   &--success {
+//     @include btn($btn--success);
+//   }
+
+//   &--error {
+//     @include btn($btn--error);
+//   }
+
+//   &--warning {
+//     @include btn($btn--warning);
+//   }
+
+//   &--info {
+//     @include btn($btn--info);
+//   }
+// }

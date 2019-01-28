@@ -16,21 +16,34 @@
 .link {
   color: $color-font-link;
   font-weight: bold;
-  list-style: none;
+  text-decoration: none;
 }
 
 .blockquote {
   text-align: left;
+  font-size: 1.5em;
+  padding-left: 0.65em;
+  border-left: 0.4em solid $color-trim;
+  border-radius: $brd-rad;
+  line-height: 1.2;
 }
 
 .headline {
   &--primary {
     color: $color-font-headline;
-    padding-left: 0.65em;
+    padding: 0 1em;
     font-weight: bold;
     font-size: 1.8em;
+    text-align: left;
   }
   &--secondary {
     padding-left: 0.4em;
+    @include mq("med") {
+      margin-top: 0;
+    }
   }
+}
+
+.card {
+  margin-bottom: 6em;
 }

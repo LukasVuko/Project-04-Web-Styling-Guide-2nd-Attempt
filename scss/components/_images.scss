@@ -6,6 +6,18 @@
 // .img--frame
 // .img--avatar
 
-.img--logo {
-  margin: 1.2em 0 2em 0;
+.img {
+  &--logo {
+  }
+  &--avatar {
+    margin: 1em auto;
+    margin-bottom: 2em;
+  }
+
+  &--frame {
+    padding: 1em;
+    border: 1px solid $color-font-default;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }

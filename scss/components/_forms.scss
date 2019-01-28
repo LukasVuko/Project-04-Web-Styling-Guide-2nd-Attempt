@@ -7,6 +7,9 @@
 // .form__input
 
 .form {
+  width: 100%;
+  justify-content: center;
+
   &__label--hidden {
     display: none;
   }
@@ -15,5 +18,16 @@
     display: block;
     text-align: left;
     width: 100%;
+    border: none;
+    border-bottom: 7px $color-trim solid;
+    margin-bottom: 1.5em;
+    width: 85%;
+    margin: 0 auto 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    &:focus {
+      outline: none;
+    }
   }
 }
