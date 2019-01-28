@@ -466,6 +466,12 @@ template {
       margin-left: 20px;
       margin-right: 20px; } }
 
+@media (min-width: 768px) {
+  .form [class^="btn--default"] {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; } }
+
 .grid__row {
   margin-bottom: 2em;
   display: flex;
@@ -565,8 +571,9 @@ template {
       background-color: #7fdec2; }
 
 .container {
-  margin: 2em 2em;
-  text-align: center; }
+  margin: 5em auto;
+  text-align: center;
+  max-width: 85%; }
 
 .link {
   color: #7bdcf8;
